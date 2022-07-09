@@ -1,0 +1,27 @@
+:root {
+  --clr-primary: #000000;
+  --sketch-area: 80vh;
+  --spacer: 0.0675rem;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+}
+
+.cells {
+  gap: var(--spacer);
+  height: var(--sketch-area);
+  width: var(--sketch-area);
+  border: 0.25rem solid var(--clr-primary);
+
+  background-color: rgb(245, 245, 245);
+}
+
+.cell {
+  background-color: white;
+  width: auto;
+  height: auto;
+}
