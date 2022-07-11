@@ -16,12 +16,14 @@ body {
 }
 
 .wrapper {
+  height: 100%;
   display: grid;
   grid-template-areas:
     "header"
     "cells"
     "options";
   place-items: center;
+  grid-template-rows: 1fr var(--sketch-area) 1fr;
 }
 
 .cells {
