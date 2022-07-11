@@ -4,6 +4,12 @@ const btn32 = document.querySelector('[data-btn="32"]');
 const btn64 = document.querySelector('[data-btn="64"]');
 
 function buildGrid(gridSize) {
+  let cells = container.childNodes;
+  cells.forEach((cell) => {
+    cell.remove();
+  });
+  container.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+  container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
   for (let i = 0; i < gridSize; i++) {
     for (let i = 0; i < gridSize; i++) {
       let cell = document.createElement("div");
