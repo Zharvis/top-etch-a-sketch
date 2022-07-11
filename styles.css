@@ -41,6 +41,11 @@ body {
 
 .cell {
   background-color: white;
+  transition: border ease-in-out 100ms;
+}
+
+.cell:hover {
+  border: 5px solid black;
 }
 
 .options {
