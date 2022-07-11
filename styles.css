@@ -1,7 +1,9 @@
 :root {
   --clr-primary: #000000;
   --sketch-area: 80vh;
-  --spacer: 0.125rem;
+  --spacer-s: 0.125rem;
+  --spacer-m: 0.25rem;
+  --spacer-l: 0.75rem;
 }
 
 *,
@@ -27,11 +29,11 @@ body {
 }
 
 .cells {
-  padding: var(--spacer);
+  padding: var(--spacer-s);
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  gap: var(--spacer);
+  gap: var(--spacer-s);
   height: var(--sketch-area);
   width: var(--sketch-area);
   border: 0.25rem solid var(--clr-primary);
@@ -41,4 +43,18 @@ body {
 
 .cell {
   background-color: white;
+}
+
+.options {
+  display: flex;
+  gap: var(--spacer-l);
+}
+
+.option {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  border: 0.125rem solid var(--clr-primary);
+  padding: var(--spacer-m);
+  font-size: 2rem;
 }
