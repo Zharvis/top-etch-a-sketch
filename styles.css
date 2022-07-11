@@ -4,13 +4,23 @@
   --spacer: 0.125rem;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
-  box-sizing: border-box;
 }
 
 .wrapper {
   display: grid;
+  grid-template-areas:
+    "header"
+    "cells"
+    "options";
   place-items: center;
 }
 
@@ -29,6 +39,4 @@ body {
 
 .cell {
   background-color: white;
-  width: auto;
-  height: auto;
 }
