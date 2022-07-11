@@ -31,8 +31,6 @@ body {
 .cells {
   padding: var(--spacer-s);
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
   gap: var(--spacer-s);
   height: var(--sketch-area);
   width: var(--sketch-area);
