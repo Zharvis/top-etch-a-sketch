@@ -40,6 +40,7 @@ body {
 }
 
 .cell {
+  user-select: none;
   background-color: white;
   transition: border ease-in-out 100ms;
 }
